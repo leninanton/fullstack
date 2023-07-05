@@ -1,32 +1,15 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+    // Инициализация массива числами
+    int numbers[] = { 1, 2, 3, 4, 5 };
 
-# Precompiled Headers
-*.gch
-*.pch
+    // Вывод элементов массива на экран
+    std::cout << "Массив чисел:" << std::endl;
+    for (int i = 0; i < sizeof(numbers) / sizeof(numbers[0]); i++) {
+        std::cout << numbers[i] << " ";
+    }
+    std::cout << std::endl;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+    return 0;
+}
